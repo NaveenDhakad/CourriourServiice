@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Customer</title>
+<link rel="stylesheet" href="homestyle.css">
+<!-- Link to external CSS file -->
+</head>
+<body>
+	<div class="form-container">
+		<h2>ADD CUSTOMER</h2>
+		<form id="customerForm" action ="loginservlet" method ="post">
+			<table>
+
+				<tr>
+					<td class="label">CUSTOMER NAME</td>
+					<td><input type="text" id="customerName" name="customerName" required="required"></td>
+				</tr>
+
+				<tr>
+					<td class="label">CUSTOMER PHONE NO</td>
+					<td><input type="text" id="customerPhone" name="customerPhone" required ></td>
+				</tr>
+
+				<tr>
+					<td class="label">ID.NO</td>
+					<td><input type="text" id="customerId" name="customerId" required></td>
+				</tr>
+
+				<tr>
+					<td class="label">ITEM ID</td>
+					<td><input type="text" id="itemId" name="itemId" required></td>
+				</tr>
+
+				<tr>
+					<td class="label">ITEM DETAILS</td>
+					<td><input type="text" id="itemDetails" name="itemDetails" required></td>
+				</tr>
+
+				<tr>
+					<td class="label">CHARGE</td>
+					<td><input type="number" id="charge" name="charge" required></td>
+				</tr>
+
+				<tr>
+					<td class="label">EMAIL ID</td>
+					<td><input type="email" id="email" name="email" required></td>
+				</tr>
+
+
+
+			</table>
+			<div class="button-container">
+			  <input type = "hidden" name = "ch" value = "2">
+				<button type="submit">SUBMIT</button>
+				
+			  <input type = "hidden" name = "ch" value = "3">
+				<button type="button" class="cancel"><a href="afteradminlogin.html">CANCEL</a></button>
+			</div>
+		</form>
+	
+
+</body>
+</html>

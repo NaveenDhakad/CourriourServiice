@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Man Detail</title>
+ <style type="text/css">
+ body {
+    background-image: url("Delievery.jpeg"); 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 400px;
+   margin-top: 0;
+    margin-left: 20px;
+    padding: 10px;
+ 
+    border-radius: 10px;
+  
+    
+}
+
+.container2 {
+    width: 400px;
+
+     margin-left: 800px;
+    padding: 10px;
+  
+    border-radius: 10px;
+ 
+    
+}
+
+h1 {
+    margin-left: 100px;
+    color: limegreen;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px black;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+   
+    gap: 20px; 
+   margin-left: 85px
+}
+
+
+
+button {
+    padding: 10px 40px; 
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit {
+    background-color: blue;
+    color: white;
+}
+
+.cancel {
+    background-color: gray;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.id_proof1{
+ width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+  
+ </style>
+</head>
+<body>
+     <h1>DELIVERY MAN DETAIL</h1>
+     <form action="loginservlet" method="POST">
+    <div class="container">
+        
+           
+            <label for="id_no">ID NO</label>
+            <input type="text" id="D_id" name="D_id" required><br>
+
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="phone">PH.NO</label>
+            <input type="text" id="phone" name="phone" required><br>
+                  
+      
+
+            </div>
+         
+         
+         <div class="buttons">
+         <input type ="hidden" name = "ch" value ='3' >
+                <button type="submit" class="submit">SUBMIT</button>
+                <button type="button" class="cancel">CANCEL</button>
+            </div>
+    
+    <div class="container2">   
+            <label for="password" >PASSWORD</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="address">ADDRESS</label>
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="id_proof">ID PROOF</label>
+           <select id="id_proof" class ="id_proof1" name="id_proof" required="required">
+                <option value="">Select ID Proof</option>
+                <option value="aadhaar">Aadhaar Card</option>
+                <option value="pan">PAN Card</option>
+                 <option value="driving_license">Driving License</option>
+            </select><br>
+
+            <label for="id_proof_number">ID PROOF NUMBER</label>
+            <input type="text" id="id_proof_number" name="id_proof_number" required><br>
+    </div>
+            
+             
+        
+
+    
+           </form>
+</body>
+</html>

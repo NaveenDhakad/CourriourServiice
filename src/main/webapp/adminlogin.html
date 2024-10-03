@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+    <div class="container">
+        <img src="admin.jpg" alt="Admin Login" class="background-image">
+        
+        <div class="login-form">
+            <h1>ADMIN</h1>
+            <form action="loginservlet" method="post">
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name" placeholder="Username"  required><br><br>
+
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" placeholder=" Enter Password" required><br><br>
+
+                <div class="buttons">
+                 <input type = "hidden" name = "ch" value = "1">
+                    <button type="submit" class="login-btn">LOGIN</button>
+                    <button type="reset" class="cancel-btn"><a href="home.html">CANCEL</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

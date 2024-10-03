@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Customer</title>
+<link rel="stylesheet" href="homestyle.css">
+<!-- Link to external CSS file -->
+</head>
+<body>
+	<div class="form-container">
+		<h2>ADD CUSTOMER</h2>
+		<form id="customerForm">
+			<table>
+
+				<tr>
+					<td class="label">NAME</td>
+					<td><input type="text" id="username" name="customerName"></td>
+				</tr>
+
+				<tr>
+					<td class="label">ID PROOF NUMBER</td>
+					<td><input type="text" id="id" name="customerPhone"></td>
+				</tr>
+
+
+			</table>
+			<div class="button-container">
+				<button type="submit">GET DETAILS</button>
+				<button type="button" class="cancel">CANCEL</button>
+			</div>
+		</form>
+		<div class="success-message" id="successMessage">Customer data
+			updated successfully</div>
+	</div>
+
+</body>
+</html>
